@@ -1,0 +1,69 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="49">
+            <item index="0" class="java.lang.String" itemvalue="django-filter" />
+            <item index="1" class="java.lang.String" itemvalue="Django" />
+            <item index="2" class="java.lang.String" itemvalue="pytz" />
+            <item index="3" class="java.lang.String" itemvalue="Markdown" />
+            <item index="4" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="5" class="java.lang.String" itemvalue="cffi" />
+            <item index="6" class="java.lang.String" itemvalue="defusedxml" />
+            <item index="7" class="java.lang.String" itemvalue="httplib2" />
+            <item index="8" class="java.lang.String" itemvalue="pyasn1" />
+            <item index="9" class="java.lang.String" itemvalue="requests" />
+            <item index="10" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="11" class="java.lang.String" itemvalue="jdcal" />
+            <item index="12" class="java.lang.String" itemvalue="pyasn1-modules" />
+            <item index="13" class="java.lang.String" itemvalue="requests-oauthlib" />
+            <item index="14" class="java.lang.String" itemvalue="certifi" />
+            <item index="15" class="java.lang.String" itemvalue="oauthlib" />
+            <item index="16" class="java.lang.String" itemvalue="lxml" />
+            <item index="17" class="java.lang.String" itemvalue="urllib3" />
+            <item index="18" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="19" class="java.lang.String" itemvalue="uritemplate" />
+            <item index="20" class="java.lang.String" itemvalue="six" />
+            <item index="21" class="java.lang.String" itemvalue="asn1crypto" />
+            <item index="22" class="java.lang.String" itemvalue="tablib" />
+            <item index="23" class="java.lang.String" itemvalue="cryptography" />
+            <item index="24" class="java.lang.String" itemvalue="simplejson" />
+            <item index="25" class="java.lang.String" itemvalue="odfpy" />
+            <item index="26" class="java.lang.String" itemvalue="cssselect" />
+            <item index="27" class="java.lang.String" itemvalue="cachetools" />
+            <item index="28" class="java.lang.String" itemvalue="google-auth" />
+            <item index="29" class="java.lang.String" itemvalue="openpyxl" />
+            <item index="30" class="java.lang.String" itemvalue="mysqlclient" />
+            <item index="31" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="32" class="java.lang.String" itemvalue="request" />
+            <item index="33" class="java.lang.String" itemvalue="django-anymail" />
+            <item index="34" class="java.lang.String" itemvalue="django-otp" />
+            <item index="35" class="java.lang.String" itemvalue="django-crispy-forms" />
+            <item index="36" class="java.lang.String" itemvalue="django-import-export" />
+            <item index="37" class="java.lang.String" itemvalue="pkg-resources" />
+            <item index="38" class="java.lang.String" itemvalue="query-string" />
+            <item index="39" class="java.lang.String" itemvalue="django-appconf" />
+            <item index="40" class="java.lang.String" itemvalue="MarkupPy" />
+            <item index="41" class="java.lang.String" itemvalue="django-summernote" />
+            <item index="42" class="java.lang.String" itemvalue="django-extra-views" />
+            <item index="43" class="java.lang.String" itemvalue="djangorestframework-simplejwt" />
+            <item index="44" class="java.lang.String" itemvalue="post" />
+            <item index="45" class="java.lang.String" itemvalue="public" />
+            <item index="46" class="java.lang.String" itemvalue="get" />
+            <item index="47" class="java.lang.String" itemvalue="python-decouple" />
+            <item index="48" class="java.lang.String" itemvalue="ldap3" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="vard_api.urls.rest_framework_simplejwt" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
