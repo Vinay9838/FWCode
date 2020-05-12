@@ -1,0 +1,36 @@
+ {% load static%}
+ <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light topbar">
+          <div class="" style="width:33%">
+            <a href="{% url 'profile' pk=request.user.userprofile.pk%}" style="text-decoration: none;">
+              <img src="{% static 'assets/img/favicon.png' %}" style="max-width:100px;vertical-align: middle;">
+            <span class="h5 text-gray-900">
+               &nbsp;<b>VARD Dashboard</b>
+            </span>
+            </a>
+          </div>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle"  src="https://project.vvdntech.com/phonebook/images/photos/vvdn_photo_{{request.user.username}}.jpg">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="userDropdown">
+
+                <a class="dropdown-item" href="{% url 'profile' pk=request.user.userprofile.pk %}">
+                  <i class="fas fa-user fa-1x fa-fw mr-2 text-gray-400"></i>
+                  {{request.user.get_full_name | truncatewords:2}}
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% url 'logout' %}">
+                  <i class="fas fa-sign-out-alt fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </nav>

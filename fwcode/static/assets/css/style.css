@@ -1,0 +1,483 @@
+@media (min-width: 768px) {
+  .sidebar.toggled .nav-item .nav-link i {
+    margin-right: 0;
+    font-size: 2rem;
+  }
+  .sidebar.toggled .nav-item .nav-link span {
+    font-size: 0.8rem;
+    display: block;
+    font-weight: bold;
+  }
+  .sidebar .nav-item .nav-link span {
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar .nav-item .nav-link i {
+    font-size: 1.4rem;
+    margin-right: 0.25rem;
+  }
+}
+
+.sidebar-dark .nav-item .nav-link i {
+  color: rgb(255, 255, 255);
+}
+
+.bg-gradient-custom {
+  background-color: #36b9cc;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(10%, #1cc88a),
+    to(#36b9cc)
+  );
+  background-image: linear-gradient(180deg, #1cc88a 10%, #36b9cc 100%);
+  background-size: cover;
+}
+
+
+
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-color: transparent;
+}
+.nav-tabs {
+  border-bottom: none;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+.nav-tabs .nav-link .active {
+  border-bottom: 2px grey;
+}
+.nav-tabs .nav-link {
+  border: none;
+  font-size: 1.2rem;
+  color: #565656;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #46c88b;
+}
+
+.modal-content {
+  border: none;
+  border-radius: none;
+}
+.modal-header {
+  color: #484848;
+  border: none;
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.process {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.process-step {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+}
+.process .btn {
+  color: white;
+  background-color: #e15353;
+  border: 1px solid #e15353;
+}
+
+.btn-circle {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+.toast-section {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 99999;
+}
+
+.toast-header {
+  border-bottom: none;
+  padding: 0.5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 2px; /* height of horizontal scrollbar ← You're missing this */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f2f2f2;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.name-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-body {
+  padding: 1rem;
+}
+
+.text-success-dark {
+  color: #33b183 !important;
+}
+.text-warning-dark {
+  color: #efab00 !important;
+}
+.text-info-dark {
+  color: #009eb5 !important;
+}
+.text-primary-dark {
+  color: #002ba5 !important;
+}
+
+.text-teal-200 {
+  color: #46c88b !important;
+}
+.border-left-teal {
+  border-left: 0.25rem solid #46c88b !important;
+}
+.count {
+}
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 0px solid #e3e6f0;
+}
+.text-danger-dark {
+  color: #c71302 !important;
+}
+.table-sm td,
+.table-sm th {
+  padding: 0.3rem;
+  white-space: nowrap;
+}
+.card{
+    border:0px solid #fff !important;
+}
+a{
+    text-decoration:none !important;
+}
+.table{
+    white-space:nowrap !important;
+}
+
+.empty{
+    background-position: center;
+    background-image: url(/static/assets/img/banner.svg);
+    height: 70vh;
+    max-width: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    opacity:.6
+    }
+
+ .btn-wide{
+    width:80px;
+ }
+
+ .notify-count{
+    height: 25px;
+    position: absolute;
+    left: 58%;
+    top: -10%;
+    font-size: .7rem;
+    background-color: #ef8400;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #fff;
+ }
+
+ .initial-placeholder{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: #46c98b;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 400;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+ }
+
+ .keyword {
+    padding: 7px 13px;
+    color: #000;
+    white-space: nowrap;
+    background-color: #fff;
+    margin: 0 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 20px;
+    font-size: .9rem;
+    font-weight:bold
+}
+.keyword-section {
+    overflow: auto;
+    padding: 5px 0px;
+
+}
+
+/**********Achievement modal home.html**************/
+/*add achievement modal trigger button*/
+.achievement-btn{
+ float:right;
+ margin:20px;
+}
+/*achievement form submit button*/
+.plusachieve{
+text-align:center;
+}
+.month{
+width:49%;
+padding-right:2px;
+}
+.year{
+width:49%;
+padding-left:2px;
+margin-left:7px;
+}
+.pro{
+width:49%;}
+.category{
+width:49%;
+margin-left:7px;
+}
+#year{float:right;}
+.file{
+width:90%;
+}
+#attach{
+padding-left:7px;
+margin-top:5px;
+}
+
+/************listing Achievement data***********/
+#list2 h4{
+padding-top:10px;
+}
+#list2 ol li:hover {
+  color:#3B9BCE;
+}
+
+/******************profile.html****************/
+/*******Step form**********/
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*form styles*/
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+.attach ,.project, .desc,.cwork,.pwork,.accolades,.escalation{
+float:left;
+}
+
+
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*inputs*/
+#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ee0979;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #C5C5F1;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+/*headings*/
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #ee0979;
+    color: white;
+}
+/***skill**/
+#myInput{
+width:100%;
+padding:2px;
+}
+
