@@ -2,6 +2,15 @@
 {%load static%}
 {% load crispy_forms_tags %}
 {%block content%}
-   <h1>Welcome</h1>
+   <div class="container">
+      {%for heading in heading%}
+      <div class="card border-info-left mb-2">
+  <div class="card-body">
+     <h5 class="card-title"> <a href="{%url 'post_detail' pk=heading.pk%}"><b>{{heading.name|title}}</b></a></h5>
+
+  </div>
+</div>
+      {%endfor%}
+   </div>
 {%endblock %}
 

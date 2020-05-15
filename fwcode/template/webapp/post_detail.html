@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+{%load static%}
+{% load crispy_forms_tags %}
+{%block content%}
+   <div class="container">
+      <div class="card border-success-left mb-2">
+  <div class="card-body">
+      <h2 class="card-title text-center"><b>{{heading.name|title}}</b></h2>
+      <div class="container mt-4">
+          {%if subheading%}
+          {%for subheading in subheading%}
+          <h4>{{forloop.counter}}.&nbsp;{{subheading.name|title}}</h4>
+          <p class="ml-2">{{subheading.description|safe}}</p>
+          {%if code%}
+          {%for code in code%}
+          {%if code.subheading == subheading%}
+          <div class="row mx-auto mb-4">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 border-info-left bg-dark pt-4 pb-2">
+                <pre><code class="text-white">{{code.code_snippet}}</code></pre>
+              </div>
+
+          </div>
+
+          {%endif%}
+          {%endfor%}
+          {%endif%}
+          {%endfor%}
+          {%endif%}
+      </div>
+
+  </div>
+</div>
+   </div>
+{%endblock %}
+

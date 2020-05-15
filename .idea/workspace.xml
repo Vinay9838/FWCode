@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92ac0492-5f85-40a7-9ada-2c507059c166" name="Default Changelist" comment="" />
+    <list default="true" id="92ac0492-5f85-40a7-9ada-2c507059c166" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/FWCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/template/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/template/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/template/webapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/template/webapp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/template/webapp/new_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/template/webapp/new_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/webapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/webapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/webapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/webapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/webapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/webapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwcode/webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/webapp/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,7 +42,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fwcode/static/assets/img" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
