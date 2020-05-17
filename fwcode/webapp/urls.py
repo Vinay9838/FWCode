@@ -6,7 +6,7 @@ from .views import home,NewPost,post_detail
 urlpatterns = [
     path('',home,name="home"),
     path('new-post/',NewPost.as_view(),name="new_post"),
-path('post-detail/<int:pk>/',post_detail,name="post_detail")
+    path('post-detail/<int:pk>/',post_detail,name="post_detail")
 
 ]
 

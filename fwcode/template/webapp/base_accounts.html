@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'assets/css/accounts.css' %}">
+{% endblock %}
+{% load crispy_forms_tags %}
+{%block content%}
+ <div class="container">
+    <h1 class="text-center logo my-4">
+      <a href="{% url 'home' %}">Fun With Python</a>
+    </h1>
+    {% block account %}
+    {% endblock %}
+  </div>
+{%endblock %}
+
