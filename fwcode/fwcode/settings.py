@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'webapp',
     'crispy_forms',
     'django_summernote',
+    'accounts',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
@@ -154,3 +156,6 @@ SUMMERNOTE_CONFIG = {
         ],
     }
 }
+
+LOGOUT_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'home'
