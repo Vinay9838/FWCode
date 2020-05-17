@@ -128,5 +128,5 @@ media/
 staticfiles/
 .idea/
 vard-env/
-.idea
+../.idea/workspace.xml
 myenv
