@@ -128,3 +128,5 @@ media/
 staticfiles/
 .idea/
 vard-env/
+.idea
+myenv
