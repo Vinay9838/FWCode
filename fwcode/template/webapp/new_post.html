@@ -6,9 +6,22 @@
 
 <div class="row">
     <div class="col-md-4 ml-2">
-        <h1>New Heading</h1>
-         <form method="post" enctype="multipart/form-data" autocomplete="off">
+        <h1 class="text-info">New Heading</h1>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#headingModal">New Heading</button>
+
+        <div class="modal fade" id="headingModal" tabindex="-1" role="dialog" aria-labelledby="headingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="headingModalLabel">New Heading</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+           <form method="post" enctype="multipart/form-data" autocomplete="off" action="new-heading/">
                       {%csrf_token%}
+      <div class="modal-body">
+
                       {%if heading_form%}
                         <div class="row">
                           <div class="col-md-12 form-group">{{heading_form.language|as_crispy_field}}</div>
@@ -23,10 +36,18 @@
                                 <button type="submit" class="btn btn-info">Save</button>
                             </li>
                         </ul>
-                  </form>
+
+      </div>
+                 </form>
     </div>
-    <div class="col-md-7">
-        <h1>Add New Blog</h1>
+  </div>
+</div>
+
+
+
+    </div>
+    <div class="col-md-7 mx-auto">
+        <h1 class="text-info">Add New Blog</h1>
    <form method="post" enctype="multipart/form-data" autocomplete="off">
                       {%csrf_token%}
                       {%if snippet_form and sub_heading_form%}
@@ -35,6 +56,7 @@
                             <div class="col-md-12 form-group">{{sub_heading_form.name|as_crispy_field}}</div>
                           <div class="col-md-12 form-group">{{sub_heading_form.description|as_crispy_field}}</div>
                           <div class="col-md-12 form-group">{{snippet_form.code_snippet|as_crispy_field}}</div>
+
                         </div>
                       {%endif%}
                         <ul class="list-inline text-right mb-0 mt-2">

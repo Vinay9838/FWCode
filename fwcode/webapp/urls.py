@@ -1,11 +1,12 @@
 from django.conf.urls.static import static
 from django.urls import path
 from fwcode import settings
-from .views import home,NewPost,post_detail
+from .views import home,NewPost,post_detail,new_heading
 
 urlpatterns = [
     path('',home,name="home"),
     path('new-post/',NewPost.as_view(),name="new_post"),
+    path('new-post/new-heading/',new_heading,name="new_heading"),
     path('post-detail/<int:pk>/',post_detail,name="post_detail")
 
 ]

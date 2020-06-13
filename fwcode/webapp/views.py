@@ -1,5 +1,5 @@
-from django.shortcuts import render,get_object_or_404
-from django.http import HttpResponse
+from django.shortcuts import render,get_object_or_404,redirect
+from django.http import HttpResponse,HttpResponseRedirect
 from .forms import ArticleCodeSnippetForm,ArticleSubHeadingForm,ArticleHeadingForm
 from django.contrib import messages
 from django.views import View
@@ -9,6 +9,20 @@ from .models import ArticleHeading,ArticleSubHeading,ArticleCodeSnippet,Language
 def home(request):
     heading = ArticleHeading.objects.all()
     return render(request,'webapp/home.html',{'heading':heading})
+
+
+def new_heading(request):
+    heading_form = ArticleHeadingForm(request.POST)
+    if heading_form.is_valid():
+        heading = heading_form.save(commit=False)
+        heading.created_by = request.user
+        heading.save()
+        messages.success(request, 'Heading Added Successfully')
+
+    else:
+        messages.error(request, heading_form.errors)
+    context = {'heading_form': heading_form}
+    return redirect('new_post')
 
 
 class NewPost(View):
@@ -24,20 +38,12 @@ class NewPost(View):
         return render(request,'webapp/new_post.html',self.context)
 
     def post(self,request):
-        heading_form = ArticleHeadingForm(request.POST)
-        snippet_form = ArticleCodeSnippetForm(request.POST)
+
         subheading_form = ArticleSubHeadingForm(request.POST)
+        snippet_form = ArticleCodeSnippetForm(request.POST)
         subheading = None
-        if heading_form.is_valid():
-            heading=heading_form.save(commit=False)
-            heading.created_by = request.user
-            heading.save()
-            messages.success(request,'Heading Added Successfully')
-        else:
-            messages.error(request,heading_form.errors)
 
         if subheading_form.is_valid():
-            print('come')
             subheading = subheading_form.save(commit=False)
             subheading.created_by = request.user
             subheading.save()

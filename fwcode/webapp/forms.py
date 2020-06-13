@@ -12,6 +12,11 @@ class ArticleHeadingForm(models.ModelForm):
             'name': forms.widgets.TextInput(attrs={'class': 'form-control'}),
         }
 
+    def __init__(self, *args, **kwargs):
+        self.project = kwargs.pop('language', 0)
+        super(ArticleHeadingForm, self).__init__(*args, **kwargs)
+        self.fields['language'].widget.attrs['class'] = "form-control"
+
 
 class ArticleSubHeadingForm(models.ModelForm):
     class Meta:
@@ -26,11 +31,17 @@ class ArticleSubHeadingForm(models.ModelForm):
 
         }
 
+    def __init__(self, *args, **kwargs):
+        self.project = kwargs.pop('heading', 0)
+        super(ArticleSubHeadingForm, self).__init__(*args, **kwargs)
+        self.fields['heading'].widget.attrs['class'] = "form-control"
+
 
 class ArticleCodeSnippetForm(models.ModelForm):
     class Meta:
         model = ArticleCodeSnippet
         fields = ['code_snippet']
         widgets = {
+            'subheading':forms.HiddenInput(),
             'code_snippet': SummernoteInplaceWidget(),
         }

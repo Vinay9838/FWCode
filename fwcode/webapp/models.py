@@ -44,5 +44,6 @@ class ArticleCodeSnippet(models.Model):
     code_snippet = models.TextField(max_length=500,null=True,blank=True)
     attachments = models.FileField(null=True, blank=True, upload_to='Article/')
 
+
     def __str__(self):
         return "{}".format(self.subheading)
