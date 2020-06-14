@@ -21,13 +21,15 @@ class ArticleHeadingForm(models.ModelForm):
 class ArticleSubHeadingForm(models.ModelForm):
     class Meta:
         model = ArticleSubHeading
-        fields = ['name','description','heading']
+        fields = ['name','description','heading','subheading']
         widgets = {
             'name':forms.widgets.TextInput(attrs={'class': 'form-control'}),
+            'subheading': forms.widgets.TextInput(attrs={'class': 'form-control','required':'true'}),
             'description': SummernoteInplaceWidget(),
         }
         labels = {
-            'name': 'Subheading'
+            'name': 'Subheading',
+            'subheading':'name',
 
         }
 
@@ -40,8 +42,15 @@ class ArticleSubHeadingForm(models.ModelForm):
 class ArticleCodeSnippetForm(models.ModelForm):
     class Meta:
         model = ArticleCodeSnippet
-        fields = ['code_snippet']
+        attachments = forms.FileField()
+        fields = ['code_snippet','subheading','attachments']
         widgets = {
-            'subheading':forms.HiddenInput(),
             'code_snippet': SummernoteInplaceWidget(),
         }
+
+    def __init__(self, *args, **kwargs):
+        self.project = kwargs.pop('subheading', 0)
+        super(ArticleCodeSnippetForm, self).__init__(*args, **kwargs)
+        self.fields['subheading'].widget.attrs['class'] = "form-control"
+
+

@@ -5,7 +5,7 @@
 
 
 <div class="row">
-    <div class="col-md-4 ml-2">
+    <div class="col-md-2">
         <h1 class="text-info">New Heading</h1>
        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#headingModal">New Heading</button>
 
@@ -46,17 +46,16 @@
 
 
     </div>
-    <div class="col-md-7 mx-auto">
-        <h1 class="text-info">Add New Blog</h1>
+    <div class="col-md-5">
+        <h1 class="text-info">Add New SubHeading</h1>
    <form method="post" enctype="multipart/form-data" autocomplete="off">
                       {%csrf_token%}
                       {%if snippet_form and sub_heading_form%}
                         <div class="row">
                           <div class="col-md-12 form-group">{{sub_heading_form.heading|as_crispy_field}}</div>
+                          <div class="col-md-12 form-group">{{sub_heading_form.subheading|as_crispy_field}}</div>
                             <div class="col-md-12 form-group">{{sub_heading_form.name|as_crispy_field}}</div>
                           <div class="col-md-12 form-group">{{sub_heading_form.description|as_crispy_field}}</div>
-                          <div class="col-md-12 form-group">{{snippet_form.code_snippet|as_crispy_field}}</div>
-
                         </div>
                       {%endif%}
                         <ul class="list-inline text-right mb-0 mt-2">
@@ -69,7 +68,25 @@
                         </ul>
                   </form>
     </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <h1 class="text-info">Code Snippet</h1>
+        <form method="post" enctype="multipart/form-data" autocomplete="off" action="snippet/">
+                      {%csrf_token%}
+                  {%if snippet_form%}
+            <div class="col-md-12 form-group">{{snippet_form.subheading|as_crispy_field}}</div>
+             <div class="col-md-12 form-group">{{snippet_form.code_snippet|as_crispy_field}}</div>
+             <div class="col-md-12 form-group">{{snippet_form.attachments|as_crispy_field}}</div>
+                   {%endif%}
+            <ul class="list-inline text-center mb-0 mt-2">
+                            <li class="list-inline-item">
+                                <button type="reset" class="btn btn-light">Reset</button>
+                            </li>
+                            <li class="list-inline-item">
+                                <button type="submit" class="btn btn-info">Save</button>
+                            </li>
+                        </ul>
+        </form>
+    </div>
     </div>
 {%endblock %}
 

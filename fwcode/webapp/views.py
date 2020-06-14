@@ -25,6 +25,18 @@ def new_heading(request):
     return redirect('new_post')
 
 
+def new_snippet(request):
+    snippet_form = ArticleCodeSnippetForm(request.POST,request.FILES)
+    print()
+    if snippet_form.is_valid():
+        snippet = snippet_form.save()
+        snippet.save()
+        messages.success(request, 'Heading Added Successfully')
+    else:
+        messages.error(request, snippet_form.errors)
+    return redirect('new_post')
+
+
 class NewPost(View):
     context={}
 
@@ -40,9 +52,7 @@ class NewPost(View):
     def post(self,request):
 
         subheading_form = ArticleSubHeadingForm(request.POST)
-        snippet_form = ArticleCodeSnippetForm(request.POST)
-        subheading = None
-
+        print(subheading_form.is_valid())
         if subheading_form.is_valid():
             subheading = subheading_form.save(commit=False)
             subheading.created_by = request.user
@@ -50,14 +60,6 @@ class NewPost(View):
             messages.success(request, 'Heading Added Successfully')
         else:
             messages.error(request, subheading_form.errors)
-
-        if snippet_form.is_valid():
-            snippet = snippet_form.save(commit=False)
-            snippet.subheading = subheading
-            snippet.save()
-            messages.success(request, 'Heading Added Successfully')
-        else:
-            messages.error(request, snippet_form.errors)
 
         return render(request, 'webapp/new_post.html', self.context)
 
