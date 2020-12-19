@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="92ac0492-5f85-40a7-9ada-2c507059c166" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fwcode/template/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/template/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fwcode/template/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/template/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fwcode/webapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/webapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fwcode/webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fwcode/webapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +35,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fwcode/static/assets/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/fwcode" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

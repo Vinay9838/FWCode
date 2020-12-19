@@ -131,4 +131,4 @@ staticfiles/
 .idea/
 vard-env/
 ../.idea/workspace.xml
-myenv
+myenv/
