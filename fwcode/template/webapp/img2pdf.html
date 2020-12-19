@@ -1,0 +1,68 @@
+{%extends 'base.html'%}
+{%load static%}
+{% load crispy_forms_tags %}
+{%block content%}
+<div class="container">
+        <button class="btn btn-primary mt-3" data-toggle="modal" data-target="#CaptureModal">Scan Documents</button>
+      <!--  Capture  modal  -->
+    <div class="modal" id="CaptureModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            <div class="modal-header p-2">
+                <h5 class="modal-title"><i class="fa fa-camera "></i> Webcam Preview</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal Header -->
+            <div class="modal-body p-0">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="" id="my_camera"></div>
+                        <div class="btn-section" style="text-align:center;">
+                            <ul class="list-inline text-center m-1" id="pre_take_buttons">
+                                <!-- This button is shown before the user takes a snapshot -->
+                                <li class="list-inline-item" onClick="preview_snapshot()">
+                                    <div class=" bg-success rounded text-white p-1" >
+                                        <button>Add</button>
+<!--                                        <i class="fas fa-3x fa-circle text-success"></i>-->
+                                    </div>
+                                </li>
+                                <li class="list-inline-item" id="upload-section" onClick="upload_pdf()">
+                                    <div class="bg-success rounded text-white p-1">
+<!--                                        <i class="fas fa-3x fa-upload text-success"></i>-->
+                                        <button>Upload</button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="list-inline m-1" id="post_take_buttons" style="display:none">
+                                <!-- These buttons are shown after a snapshot is taken -->
+                                <li class="list-inline-item" onClick="save_photo()">
+                                    <div class=" bg-success rounded text-white p-1" style="">
+<!--                                    <i class="fas fa-3x fa-check text-white"></i>-->
+                                        <button>Save</button>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item" onClick="cancel_preview()" >
+                                    <div class="bg-danger rounded text-white p-1" >
+<!--                                        <i class="fas fa-3x fa-times text-white"></i>-->
+                                        <button>Cancel</button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 ">
+                        <iframe id="pdf_preview" type="application/pdf" src="" style="width:100%;height:350px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{%endblock%}
+ {%block script%}
+<script src="{%static 'assets/js/webcam.js'%}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+     <script src="{%static 'assets/js/capture.js'%}"></script>
+    {%endblock%}

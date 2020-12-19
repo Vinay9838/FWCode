@@ -76,3 +76,6 @@ def post_detail(request,pk):
     return render(request,'webapp/post_detail.html',context)
 
 
+def img2pdf(request):
+    return render(request,'webapp/img2pdf.html')
+
