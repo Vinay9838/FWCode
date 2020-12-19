@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92ac0492-5f85-40a7-9ada-2c507059c166" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fwcode/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-    </list>
+    <list default="true" id="92ac0492-5f85-40a7-9ada-2c507059c166" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,11 +52,5 @@
       <updated>1589200536856</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="406" y="92" width="618" height="580" key="find.popup" timestamp="1589632708031">
-      <screen x="65" y="24" width="1301" height="744" />
-    </state>
-    <state x="406" y="92" width="618" height="580" key="find.popup/65.24.1301.744@65.24.1301.744" timestamp="1589632708031" />
   </component>
 </project>
