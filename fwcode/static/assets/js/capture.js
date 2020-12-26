@@ -22,7 +22,8 @@ $(document).ready(function(){
             jpeg_quality: 90,
 
             // flip horizontal (mirror mode)
-            flip_horiz: true
+            flip_horiz: false,
+            facingMode: "environment"
         });
         Webcam.attach( '#my_camera' );
     });
@@ -103,6 +104,11 @@ $(document).ready(function(){
 
 });
 
+
+$('#CaptureModal').on('hidden.bs.modal', function () {
+
+    Webcam.reset();
+});
 
 
 
